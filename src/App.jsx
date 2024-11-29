@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import Hero from "./pages/Home/hero";
+import Hero from "./pages/Home/Hero";
 import TopSection from "./components/TopSection";
 import Destnation from "./pages/Home/Destnation";
 import Search from "./pages/Home/Search";
