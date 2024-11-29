@@ -8,7 +8,7 @@ import {
 } from "./assets";
 
 export const navLinks = [
-	{ title: "Home", to: "/" },
+	{ title: "Home", to: "/travel/" },
 	{ title: "About Us", to: "/about" },
 	{ title: "Destination", to: "/contact" },
 	{ title: "Tours", to: "/contact" },

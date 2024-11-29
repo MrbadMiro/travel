@@ -27,13 +27,13 @@ const Destnation = () => {
 					<p className="font-Reenie text-[#00BB98] font-bold  text-[36px] ">
 						Dream Vacation Destination
 					</p>
-					<p className="font-nunito text-[#111B19]  font-bold  text-[60px]">
-						Plan the Trip of a Lifetime{" "}
+					<p className="font-nunito text-[#111B19]  font-bold  text-[48px]">
+						Plan the Trip of a Lifetime <br />with Ease
 					</p>
 					<p className="font-nunito text-[#111B19]  font-bold  text-[60px]">
-						with Ease
+						
 					</p>
-					<p className="font-Poppins font-normal text-[#6E6E6E] text-[20px] leading-[#24px] tracking-[#16] mt-2">
+					<p className="font-Poppins font-normal text-[#6E6E6E] text-[16px] leading-[#24px] tracking-[#16] mt-2">
 						Whether you're looking for a romantic getaway, a family-friendly
 						adventure, or a solo journey to explore the world, a travel agency
 						can provide you with a custom-tailored itinerary that exceeds your
