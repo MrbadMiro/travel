@@ -10,6 +10,7 @@ import {
 export const navLinks = [
 	{ title: "Home", to: "/travel/" },
 	{ title: "About Us", to: "/travel/about" },
+	{ title: "Tours", to: "/travel/tours" },
 	{ title: "Destination", to: "/travel/destination" },
 	{ title: "Contact", to: "/travel/contact" },
 ];

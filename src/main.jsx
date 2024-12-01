@@ -10,7 +10,7 @@ import ErrorPage from "./ErrorPage";
 import About from "./pages/About/About";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Destination from "./pages/Destination/Destination";
-
+import Tours from "./pages/Tours/Tours";
 
 
 const router = createBrowserRouter([
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
 			{
 				path: "/travel/destination",
 				element: <Destination/>,
+			},
+			{
+				path: "/travel/tours",
+				element: <Tours/>,
 			},
 			
 			
