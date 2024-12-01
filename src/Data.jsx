@@ -9,9 +9,9 @@ import {
 
 export const navLinks = [
 	{ title: "Home", to: "/travel/" },
-	{ title: "About Us", to: "/about" },
-	{ title: "Destination", to: "/contact" },
-	{ title: "Tours", to: "/contact" },
+	{ title: "About Us", to: "/travel/about" },
+	{ title: "Destination", to: "/travel/destination" },
+	{ title: "Contact", to: "/travel/contact" },
 ];
 
 export const createSectionStyle = (image) => ({

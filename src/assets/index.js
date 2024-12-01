@@ -36,7 +36,13 @@ import About_img2 from './About_img2.jpg';
 import About_img3 from './About_img3.jpg';
 import About_img4 from './About_img4.jpg';
 
+//
+import Banner_img from './Banner.jpg'
 
+
+
+
+//
 import Vector_1 from './Vector_1.svg';
 import Vector_2 from './Vector_2.svg';
 import Vector_3 from './Vector_3.svg';
@@ -72,7 +78,8 @@ export{
     Footer_img,
     Footer_Tree,
 
-
+    //
+    Banner_img,
 
     //
     Hero_img,
