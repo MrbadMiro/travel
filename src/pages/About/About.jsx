@@ -6,6 +6,7 @@ import About_Section4 from './About_Section4'
 import Home_Section4 from '../Home/Home_Section4'
 import About_Section6 from './About_Section6'
 import About_Section5 from './About_Section5'
+import Faq from './Faq'
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
         <Home_Section4/>
         <About_Section5/>
         <About_Section6/>
+        <Faq/>
     </div>
   )
 }
