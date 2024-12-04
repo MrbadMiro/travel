@@ -17,12 +17,26 @@ body {
 	display: flex;
 }
 
+
 .slick-slide div {
 	margin: 10px;
 }
 .custom-slider .slick-dots li button:before {
 	color: #1f294c; /* Change to your desired color */
 }
+
+.slider-two .slick-slide > div {
+	margin: 0px;
+  }
+
+
+
+
+
+
+
+
+
 
 .boxShadow {
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -173,16 +187,10 @@ input::placeholder {
 	color: gray;
 	font-size: 14px;
 	opacity: 0.8;
-  }
-  
-  /* Optional: Add a focus effect */
-  input:focus::placeholder {
+}
+
+/* Optional: Add a focus effect */
+input:focus::placeholder {
 	color: lightgray;
 	opacity: 0.5;
-  }
-  
-
-
-  
-  
-  
+}
