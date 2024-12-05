@@ -41,6 +41,9 @@ export default {
 					"100%": { transform: "rotate(-10deg)" },
 				  },
 			},
+			boxShadow: {
+				'custom-drop': '0px 4px 30px rgba(43, 89, 255, 0.08) ', // Custom drop shadow
+			  },
 
 			colors: {
 				primary: "#ffffff",

@@ -72,13 +72,16 @@ export const cardsData2 = [
 export const Client = [
 	{
 		id: 1,
-
-		category: " Bacon ipsum dolor amet porchetta hamburger swine, ball tip bresaola short ribs fatback strip steak ground round rump. Alcatra shankle ham hock frankfurter, bacon pork loin cow salami meatball hamburgerBeauty & Hair dressing ",
+		style: createSectionStyle(HomeSection_2_1),
+		image: "",
+        category: " Bacon ipsum dolor amet porchetta hamburger swine, ball tip bresaola short ribs fatback strip steak ground round rump. Alcatra shankle ham hock frankfurter, bacon pork loin cow salami meatball hamburgerBeauty & Hair dressing ",
 		title:
 			"Look like those professional beauticians and hairdressers. Get full beauty treatment here from hair cutting to facial.",
 	},
 	{
 		id: 2,
+		style: createSectionStyle(HomeSection_2_1),
+		image: "",
 
 		category: "Bacon ipsum dolor amet porchetta hamburger swine, ball tip bresaola short ribs fatback strip steak ground round rump. Alcatra shankle ham hock frankfurter, bacon pork loin cow salami meatball hamburger",
 		title:
@@ -86,6 +89,8 @@ export const Client = [
 	},
 	{
 		id: 3,
+		style: createSectionStyle(HomeSection_2_1),
+		image: "",
 
 		category: "Bacon ipsum dolor amet porchetta hamburger swine, ball tip bresaola short ribs fatback strip steak ground round rump. Alcatra shankle ham hock frankfurter, bacon pork loin cow salami meatball hamburger",
 		title:
@@ -93,8 +98,9 @@ export const Client = [
 	},
 	{
 		id: 4,
-
-		category: "Bacon ipsum dolor amet porchetta hamburger swine, ball tip bresaola short ribs fatback strip steak ground round rump. Alcatra shankle ham hock frankfurter, bacon pork loin cow salami meatball hamburger",
+		style: createSectionStyle(HomeSection_2_1),
+		image: "",
+        category: "Bacon ipsum dolor amet porchetta hamburger swine, ball tip bresaola short ribs fatback strip steak ground round rump. Alcatra shankle ham hock frankfurter, bacon pork loin cow salami meatball hamburger",
 		title:
 			"The Aari embroidery, rich in its details, is meant for those who wish to bestow their fabric creation with exquisite embellishments.",
 	},
@@ -107,6 +113,17 @@ export const Client = [
 	},
 	
 ];
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 

@@ -4,7 +4,7 @@ import { toursData } from "./Filter";
 import { IoLocationOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { FaRegClock } from "react-icons/fa";
-import { star, Banner_img, Avathar } from "../../assets";
+import { star, Banner_img, Avathar, Home_Section6_1 } from "../../assets";
 import { CiVideoOn } from "react-icons/ci";
 import { BiPhotoAlbum } from "react-icons/bi";
 import { IoShareSocialSharp } from "react-icons/io5";
@@ -125,14 +125,17 @@ const TourDetailsPage = () => {
 					</div>
 					<div className="flex"></div>
 				</div>
-				<div className="w-full h-fit pb-6 mt-8 ">
-					<Slider {...settings} className="slider-two">
-             
+				<div className="w-full h-fit pb-6 mt-8 relative ">
+					<div className="flex absolute ">
+						<div></div>
+					</div>
+
+					<Slider {...settings} className="slider-two  ">
 						{Client.map((item, index) => (
 							<div
-               id="Slider-Boxes2"
+								id="Slider-Boxes2"
 								key={index}
-								className="p-6  h-[250px] boxShadow1 flex flex-col relative  z-12 cursor-pointer group bg-white shadow-custom1 ">
+								className="p-6  h-[250px] flex flex-col relative  z-12 cursor-pointer group bg-white   ">
 								<p className="font-nunito text-neutral-600  font-bold  text-[14px]">
 									{item.category}
 								</p>
@@ -161,75 +164,90 @@ const TourDetailsPage = () => {
 				</div>
 			</div>
 
-			{/* Tour Header */}
-			<div className="grid md:grid-cols-2 gap-8">
-				{/* Image Section */}
-				<div>
-					<img
-						src={Banner_img}
-						alt={tour.title}
-						className="w-full h-[400px] object-cover rounded-xl"
-					/>
+			<div className="grid md:grid-cols-10 md:px-24 px-6 my-24">
+				<div className="flex col-span-6 flex-col gap-2 ">
+					<p className="text-black text-[24px] font-bold font-inter  ">
+						Overview
+					</p>
+					<p className="text-[#444444] text-[13px] font-inter  ">
+						The secret journey of Tonkin is designed for travelers who want to
+						touch, taste and feel the souls of Northern Vietnam through their
+						unique highlights and experiences. More than simple whirlwind tours,
+						the secret journey of Tonkin of Tonkin marry iconic destinations and
+						must-see spots with the hidden corners and below-the-skin
+						experiences to discover some of the famous and unique places around
+						the Halong region.
+					</p>
+					<p className="text-[#444444] text-[13px] font-inter ">
+						The secret journey of Tonkin is designed for travelers who want to
+						touch, taste and feel the souls of Northern Vietnam through their
+						unique highlights and experiences. More than simple whirlwind tours,
+						the secret journey of Tonkin of Tonkin marry iconic destinations and
+						must-see spots with the hidden corners and below-the-skin
+						experiences to discover some of the famous and unique places around
+						the Halong region.
+					</p>
+					<p className="text-[#444444] text-[13px] font-inter ">
+						The secret journey of Tonkin is designed for travelers who want to
+						touch, taste and feel the souls of Northern Vietnam through their
+						unique highlights and experiences. More than simple whirlwind tours,
+						the secret journey of Tonkin of Tonkin marry iconic destinations and
+						must-see spots with the hidden corners and below-the-skin
+						experiences to discover some of the famous and unique places around
+						the Halong region.
+					</p>
 				</div>
-
-				{/* Tour Info Section */}
-				<div className="bg-white p-6 rounded-xl shadow-md">
-					<h1 className="text-3xl font-bold text-[#5ec9b3] mb-4">
-						{tour.title}
-					</h1>
-
-					<div className="flex items-center mb-2">
-						<IoLocationOutline className="mr-2" />
-						<span className="text-[#444444]">{tour.location}</span>
+				<div className="flex col-span-4">
+					<div className="flex flex-col shadow-custom-drop bg-white p-4 w-full">
+						<form action="" className="flex flex-col gap-4 py-4">
+							<div className="flex flex-col">
+								<label
+									htmlFor=""
+									className="text-[#111B19] text-[15px] font-inter font-normal  ">
+									Check in
+								</label>
+								<input
+									type="date"
+									name=""
+									id=""
+									className="text-[14px]  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
+								/>
+							</div>
+							<div className="flex flex-col">
+								<label
+									htmlFor=""
+									className="text-[#111B19] text-[15px] font-inter font-normal  ">
+									Check out
+								</label>
+								<input
+									type="date"
+									name=""
+									id=""
+									className="text-[14px]  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
+								/>
+							</div>
+							<div className="flex flex-col">
+								<label
+									htmlFor=""
+									className="text-[#111B19] text-[15px] font-inter font-normal  ">
+									Guests
+								</label>
+								<input
+									type="text"
+									name=""
+									id=""
+									className="text-[14px]  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
+								/>
+							</div>
+							<button className="bg-[#FD4C5C] flex w-full items-center justify-center py-2 rounded-[4px]">
+								<p className="text-[#FFFFFF] text-[15px] font-inter font-normal    ">
+									 
+									Booking Now
+								</p>
+							</button>
+						</form>
 					</div>
-
-					<div className="flex items-center mb-4">
-						<img src={star} alt="Star" className="w-5 h-5 mr-2" />
-						<span className="text-[#444444]">
-							{tour.reviews} review{tour.reviews > 1 ? "s" : ""}
-						</span>
-					</div>
-
-					<div className="flex gap-4 mb-4">
-						<div className="flex items-center gap-2 border border-[#00BB98] p-2 rounded-[5px]">
-							<CgProfile className="text-[#00BB98]" />
-							<span className="text-[#00BB98]">
-								{tour.profileCount} Participants
-							</span>
-						</div>
-						<div className="flex items-center gap-2 border border-[#00BB98] p-2 rounded-[5px]">
-							<FaRegClock className="text-[#00BB98]" />
-							<span className="text-[#00BB98]">{tour.duration}</span>
-						</div>
-					</div>
-
-					<div className="mb-4">
-						<span className="text-2xl font-bold text-[#111B19]">
-							{tour.price}
-						</span>
-						<span className="text-[#444444] ml-2">per person</span>
-					</div>
-
-					<button className="bg-[#FD4C5C] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#FF6B7B] transition-colors">
-						Book Now
-					</button>
 				</div>
-			</div>
-
-			{/* Tour Details Sections */}
-
-			{/* Tour Details Sections */}
-			<div className="mt-8">
-				{tourDetails.map((section, index) => (
-					<div key={index} className="mb-6">
-						<h2 className="text-2xl font-bold text-[#5ec9b3] mb-4">
-							{section.title}
-						</h2>
-						<div className="bg-white p-6 rounded-xl shadow-md whitespace-pre-line">
-							{section.content}
-						</div>
-					</div>
-				))}
 			</div>
 		</div>
 	);
