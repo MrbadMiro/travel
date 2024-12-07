@@ -20,7 +20,7 @@ const Data = [
 const About_Section3 = () => {
 	return (
 		<div className="flex md:px-24 px-6 py-24 w-full">
-			<div className="grid grid-cols-5 gap-4 w-full">
+			<div className="grid md:grid-cols-5 gap-4 w-full">
 				{/* Text Section */}
 				<div className="flex flex-col w-full col-span-2">
 					<p className="font-nunito text-[#111B19] font-bold text-[34px]">
@@ -38,7 +38,7 @@ const About_Section3 = () => {
 				</div>
 
 				{/* Grid Section */}
-				<div className="col-span-3 grid md:grid-cols-3 px-4 gap-2">
+				<div className="col-span-3 grid md:grid-cols-3 md:px-4 gap-2">
 					{Data.map((item) => (
 						<div
 							className="flex flex-col items-center justify-center border-2 border-gray-200 p-2 hover:bg-red-600"

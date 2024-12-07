@@ -9,7 +9,7 @@ const About_Section6 = () => {
 				</p>
 				<p className="font-nunito text-[#111B19] font-bold text-[28px] mt-2">Contact us for a Quote</p>
 			</div>
-			<div className="flex md:flex-cols-2 mt-8  w-full ">
+			<div className="grid md:grid-cols-2 mt-8  w-full ">
 				<div className="flex w-full  ">
 					<img src={Hiking} alt="" className="w-full h-full object-cover" />
 				</div>

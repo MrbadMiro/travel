@@ -21,8 +21,8 @@ const Form = () => {
 					<h3 className="text-lg font-bold mb-4">Contact Information</h3>
 					<p>Enter your details below to get in touch.</p>
 				</div>
-				<div className="flex flex-col bg-gray-50 p-8 ">
-					<form>
+				<div className=" shadow-custom-drop flex-col bg-gray-50 p-8 ">
+					<form className="">
 						<div className="mb-4">
 							<label className="block text-sm font-medium text-gray-700">
 								Name

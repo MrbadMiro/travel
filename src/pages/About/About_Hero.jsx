@@ -9,16 +9,16 @@ import {
 const About_Hero = () => {
 	return (
 		<div className="flex md:px-24 px-6 flex-col mt-[50px] w-full py-24">
-			<div className="w-full flex md:flex-cols-2">
+			<div className="w-full grid md:grid-cols-2">
 				{/* Right Content Section */}
 				<div className="flex flex-col w-full">
 					<p className="font-Reenie text-[#00BB98] font-bold  text-[36px] ">
 						Tourist Hotspots
 					</p>
-					<p className="font-nunito text-[#111B19]  font-bold  text-[48px] mt-2">
+					<p className="font-nunito text-[#111B19]  font-bold  text-[36px] md:text-[48px] mt-2">
 						Trip Planning for the Best Travel Experience Possible
 					</p>
-					<p className="font-Poppins font-normal text-[#6E6E6E] text-[16px] text-justify mt-4">
+					<p className="font-Poppins font-normal text-[#6E6E6E]  text-[14px] md:text-[16px] text-justify mt-4">
 						Welcome to our travel agency, where we specialize in providing our
 						clients with unforgettable travel experiences.Whether you're looking
 						to relax on a tropical beach or embark on a cultural adventure, we
@@ -26,16 +26,17 @@ const About_Hero = () => {
 						accommodations to tours and activities, we'll handle all the
 						details, so you can focus on making memories.
 					</p>
-					<div className="flex items-center">
+					<div className="flex flex-col gap-4 mt-2">
+					<div className="flex items-center ">
 						<TiTick className="text-[#6E6E6E]" />
-						<p className="font-Poppins font-normal text-[#6E6E6E] text-[16px] text-justify mt-4">
+						<p className="font-Poppins font-normal text-[#6E6E6E] text-[14px] md:text-[16px] text-justify">
 							We offer a wide range of travel tours to destinations all over the
 							world
 						</p>
 					</div>
-					<div className="flex items-center">
+					<div className="flex items-center ">
 						<TiTick className="text-[#6E6E6E]" />
-						<p className="font-Poppins font-normal text-[#6E6E6E] text-[16px] text-justify mt-4">
+						<p className="font-Poppins font-normal text-[#6E6E6E] text-[14px] md:text-[16px] text-justify ">
 							We offer a wide range of travel tours to destinations all over the
 							world
 						</p>
@@ -45,10 +46,13 @@ const About_Hero = () => {
 							Read More
 						</button>
 					</div>
+
+					</div>
+					
 				</div>
 
 				{/* left Content Section */}
-				<div className="flex w-full">
+				<div className="flex w-full mt-4">
 					<div className="flex flex-cols-3  px-4 gap-2 justify-evenly relative">
 						<div className="w-full h-full  ">
 							<img
