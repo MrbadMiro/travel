@@ -37,8 +37,8 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className="mt-10  flex md:px-24 px-6  w-full">
-				<div className="grid lg:grid-cols-5  gap-2  bg-white rounded-xl box  items-center justify-center w-full lg:mr-[200px]">
-					<div className="flex flex-col p-4 w-full  ">
+				<div className="grid lg:grid-cols-5  gap-2  bg-white rounded-xl box  md:pl-0 pl-4 w-full lg:mr-[200px] md:py-0 py-6">
+					<div className="flex flex-col p-0 md:p-4 w-full  ">
 						<div className="flex items-center">
 							<div>
 								<IoLocationOutline className=" text-[#FD4C5C] text-[24px]" />
@@ -76,7 +76,7 @@ const Hero = () => {
 							/>
 						</div>
 					</div>
-					<div className="flex flex-col md:pl-0 pl-4 py-4  w-full">
+					<div className="flex flex-col  py-4  w-full">
 						<div className="flex items-center">
 							<div>
 								<IoLocationOutline className=" text-[#FD4C5C] text-[24px]" />
@@ -115,8 +115,8 @@ const Hero = () => {
 						</div>
 					</div>
 					<div className="flex flex-col  py-4 px-2 items-center w-full ">
-						<div className="flex">
-						<div className="bg-[#FD4C5C] p-5 ">
+						<div className="flex w-full md:w-[70px]">
+						<div className="bg-[#FD4C5C] p-5 w-full flex items-center justify-center ">
 							<FaSearch className="text-white" />
 						</div>
 						</div>
