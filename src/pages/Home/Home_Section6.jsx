@@ -9,11 +9,11 @@ const Home_Section6 = () => {
 	const sectionStyle = createSectionStyle(Container);
 	const sectionStyle1 = createSectionStyle(Home_Section6_1);
 	return (
-		<div className="flex flex-col h-[250px]">
+		<div className="flex flex-col  py-24">
 			<div className="grid   md:grid-cols-5 h-[250px]">
-				<div className="w-full h-[250px]">
-					<div className=" h-full">
-						<img src={Home_Section6_1} alt="" className="h-full object-cover" />
+				<div className="flex w-full h-[250px]">
+					<div className="flex w-full h-full">
+						<img src={Home_Section6_1} alt="" className="h-full w-full object-cover" />
 					</div>
 				</div>
 				<div className="col-span-4 flex flex-col items-center bg-center justify-center h-[250px]">

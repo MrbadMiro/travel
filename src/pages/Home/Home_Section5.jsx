@@ -29,7 +29,7 @@ const Home_Section5 = () => {
 				<div className="w-full"></div>
 			</div>
 
-			<div className="flex flex-cols-4 w-full gap-2 mt-5 ">
+			<div className="grid  md:grid-cols-4 w-full gap-2 mt-5 ">
 				<div className="w-full h-[300px] "> 
                     <img src={HomeSection_2_1} alt=""  className="w-full object-cover h-full rounded-xl"/>
                 </div>
