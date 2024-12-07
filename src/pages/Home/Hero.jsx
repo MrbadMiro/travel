@@ -116,7 +116,7 @@ const Hero = () => {
 					</div>
 					<div className="flex flex-col  py-4 px-2 items-center w-full ">
 						<div className="flex w-full md:w-[70px]">
-						<div className="bg-[#FD4C5C] p-5 w-full flex items-center justify-center ">
+						<div className="bg-[#FD4C5C] p-4 w-full flex items-center justify-center ">
 							<FaSearch className="text-white" />
 						</div>
 						</div>
