@@ -3,7 +3,7 @@ import { Home_Section4_1, Home_Section4_2 } from "../../assets";
 const Home_Section4 = () => {
 	return (
 		<div className="flex md:px-24 px-6 py-24">
-			<div className="flex flex-cols-2 w-full">
+			<div className="grid md:grid-cols-2 w-full">
 				<div className="flex flex-cols-2 w-full relative gap-2">
 					<div className="flex gap-1 relative ">
 						<div className="bg-[#FD4C5C] w-[200px] h-[150px] absolute -right-14 flex flex-col  bottom-8 rounded-xl p-4">
@@ -17,7 +17,7 @@ const Home_Section4 = () => {
 						<img src={Home_Section4_1} alt="" className="w-[300px]" />
 					</div>
 				</div>
-				<div className="flex flex-col">
+				<div className="flex flex-col px-4 md:mt-0 mt-8">
 					<p className="font-nunito text-[#111B19]  font-bold  text-[46px]">
 						Global Trusted Travel and Advanture Partners
 					</p>
