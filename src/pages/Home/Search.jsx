@@ -18,7 +18,7 @@ const Search = () => {
 					you can plan the trip of a lifetime with ease.
 				</p>
 			</div>
-			<div className="w-full p-8 bg-white rounded-[5px] mt-8 flex flex-cols-4">
+			<div className="w-full p-8 bg-white rounded-[5px] mt-8 grid md:grid-cols-4 gap-2">
 				<div className="w-full flex flex-cols-2 items-center gap-2 ">
 					<div><FaSearch  className="text-[60px] text-[#F3A46B]"/></div>
 					<div className="flex flex-col ">
