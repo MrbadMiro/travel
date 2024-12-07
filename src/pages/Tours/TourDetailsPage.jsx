@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import { toursData } from "./Filter";
 import { IoLocationOutline } from "react-icons/io5";
@@ -8,6 +8,7 @@ import { star, Banner_img, Avathar, Home_Section6_1 } from "../../assets";
 import { CiVideoOn } from "react-icons/ci";
 import { BiPhotoAlbum } from "react-icons/bi";
 import { IoShareSocialSharp } from "react-icons/io5";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 //slider
 import { Client } from "../../Data";
@@ -16,6 +17,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const TourDetailsPage = () => {
+	const sliderRef = useRef(null);
+
 	var settings = {
 		dots: false,
 		infinite: true,
@@ -125,42 +128,31 @@ const TourDetailsPage = () => {
 					</div>
 					<div className="flex"></div>
 				</div>
-				<div className="w-full h-fit pb-6 mt-8 relative ">
-					<div className="flex absolute ">
-						<div></div>
-					</div>
-
-					<Slider {...settings} className="slider-two  ">
+				<div className="w-full h-fit  mt-8 relative group">
+					<Slider {...settings} className="slider-two" ref={sliderRef}>
 						{Client.map((item, index) => (
 							<div
 								id="Slider-Boxes2"
 								key={index}
-								className="p-6  h-[250px] flex flex-col relative  z-12 cursor-pointer group bg-white   ">
-								<p className="font-nunito text-neutral-600  font-bold  text-[14px]">
-									{item.category}
-								</p>
-
-								<div className="flex mt-4 justify-between ">
-									<div className="flex  justify-between">
-										<div className="flex">
-											<img
-												src={Avathar}
-												alt=""
-												className="w-[60px] h-[60px] rounded-full"
-											/>
-										</div>
-										<div className="flex flex-col">
-											<p>Jenny Wilson</p>
-											<p>UI/UX Designer</p>
-										</div>
-									</div>
-									<div className="flex">
-										<img src={star} alt="" />
-									</div>
-								</div>
+								className="pl-2 h-[250px] flex flex-col relative z-12 cursor-pointer bg-white">
+								<img src={Home_Section6_1} alt="" className="w-full h-full object-cover" />
 							</div>
 						))}
 					</Slider>
+
+					{/* Navigation Arrows */}
+					<div className="flex absolute z-10 justify-between w-full md:px-24 px-6 top-1/2 -translate-y-1/2 hidden group-hover:flex">
+						<button
+							onClick={() => sliderRef.current && sliderRef.current.slickPrev()} // Go to previous slide
+							className="border-red-700 p-2 border-2 rounded-full">
+							<FaChevronLeft />
+						</button>
+						<button
+							onClick={() => sliderRef.current && sliderRef.current.slickNext()} // Go to next slide
+							className="border-red-700 p-2 border-2 rounded-full">
+							<FaChevronRight />
+						</button>
+					</div>
 				</div>
 			</div>
 
@@ -210,7 +202,7 @@ const TourDetailsPage = () => {
 									type="date"
 									name=""
 									id=""
-									className="text-[14px]  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
+									className="text-[14px] outline-none border-[#E6E6E6] border p-2 text-[#444444] font-inter"
 								/>
 							</div>
 							<div className="flex flex-col">
@@ -223,7 +215,7 @@ const TourDetailsPage = () => {
 									type="date"
 									name=""
 									id=""
-									className="text-[14px]  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
+									className="text-[14px] outline-none  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
 								/>
 							</div>
 							<div className="flex flex-col">
@@ -236,12 +228,11 @@ const TourDetailsPage = () => {
 									type="text"
 									name=""
 									id=""
-									className="text-[14px]  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
+									className="text-[14px] outline-none  border-[#E6E6E6] border p-2 text-[#444444] font-inter"
 								/>
 							</div>
 							<button className="bg-[#FD4C5C] flex w-full items-center justify-center py-2 rounded-[4px]">
 								<p className="text-[#FFFFFF] text-[15px] font-inter font-normal    ">
-									 
 									Booking Now
 								</p>
 							</button>

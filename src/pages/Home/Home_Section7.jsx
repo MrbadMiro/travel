@@ -59,7 +59,7 @@ const Home_Section7 = () => {
 						<div
 							id="Slider-Boxes"
 							key={index}
-							className="p-10 rounded-2xl h-[250px] boxShadow1 flex flex-col relative  z-12 cursor-pointer group bg-white shadow-custom1 ">
+							className="p-10 rounded-2xl h-[250px] shadow-custom-drop flex flex-col relative  z-12 cursor-pointer group bg-white shadow-custom1 ">
 							
 
 							<p className="font-nunito text-neutral-600  font-bold  text-[14px]">

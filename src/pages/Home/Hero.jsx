@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero_image, Hero_image_bg,Home_Section4_1,Hero_img } from "../../assets";
+import { Hero_image, Hero_image_bg,Home_Section4_1,Hero_img,Hero_img1 } from "../../assets";
 
 import { IoLocationOutline } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
@@ -14,7 +14,7 @@ const Hero = () => {
 		<div
 			className="flex flex-col h-full w-full  py-24 bg-[#00BB98] bg-opacity-5 "
 			style={sectionStyle}>
-			<div className=" grid md:grid-cols-2   w-full  ">
+			<div className=" grid md:grid-cols-2   w-full mt-3E ">
 				{/* left section */}
 				<div className="md:px-24 px-6 flex flex-col lg:mt-[80px] w-full lg:text-left text-center">
 					<p className="font-LaBelle text-[#00BB98] font-normal text-[32] ">
@@ -29,9 +29,11 @@ const Hero = () => {
 					</p>
 				</div>
 
-				<div class="w-full flex relative z-10 ">
+				{/* right Section */}
+
+				<div class="w-full flex relative md:mt-0  ">
 					
-					<img src={Hero_img} alt="" className="hidden   top-0 bottom-0 w-full  h-[500px] object-cover" />
+					<img src={Hero_img1} alt="" className=" my-6 md:py-0  top-0 bottom-0 w-full  md:h-[400px] h-[300px] object-cover" />
 				</div>
 			</div>
 			<div className="mt-10  flex md:px-24 px-6  w-full">

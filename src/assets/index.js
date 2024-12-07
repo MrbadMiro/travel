@@ -3,7 +3,7 @@ import Hero_image from './Hero_image.jpg';
 import Hero_image_bg from './Hero_image_bg.svg';
 import Hero_Section2_bg from './Hero_Section2_bg.svg';
 import Hero_img from './Hero_img.png'
-
+import Hero_img1 from './Hero_img1.png'
 
 import tree from './tree.svg';
 import clock from './clock.svg';
@@ -55,6 +55,7 @@ export{
     Hero_image,
     Hero_image_bg,
     Hero_Section2_bg,
+    Hero_img1,
 
     //
     HomeSection_2_1,
