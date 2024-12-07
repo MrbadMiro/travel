@@ -24,10 +24,10 @@ const Destnation = () => {
 			{/* 1 text part */}
 			<div className="flex flex-cols-2" >
 				<div className="flex flex-col">
-					<p className="font-Reenie text-[#00BB98] font-bold  text-[36px] ">
+					<p className="font-Reenie text-[#00BB98] font-bold  md:text-[36px] text-[20px] ">
 						Dream Vacation Destination
 					</p>
-					<p className="font-nunito text-[#111B19]  font-bold  text-[48px]">
+					<p className="font-nunito text-[#111B19]  font-bold  md:text-[48px] text-[36px]">
 						Plan the Trip of a Lifetime <br />with Ease
 					</p>
 					<p className="font-nunito text-[#111B19]  font-bold  text-[60px]">
@@ -48,8 +48,8 @@ const Destnation = () => {
 				<div className="flex w-full " ></div>
 			</div>
 			{/* 2 image part  Cards Section */}
-			<div className="flex mt-12">
-				<div className="flex flex-cols-3 w-full mt-4 gap-2">
+			<div className="flex flex-col mt-12">
+				<div className="grid md:grid-cols-3 w-full mt-4 gap-2">
 					{cardsData.map((card, index) => (
 						<Card
 							key={index}
@@ -62,7 +62,7 @@ const Destnation = () => {
 			</div>
 			{/* 3 box part */}
 			<div className="flex mt-8">
-				<div className=" flex  flex-cols-3 w-full gap-3">
+				<div className=" grid md:grid-cols-3 w-full gap-3">
 					{/* 1st */}
 					{cardsData2.map((card) => (
 						<div
