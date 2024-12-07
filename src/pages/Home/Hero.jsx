@@ -17,7 +17,7 @@ const Hero = () => {
 			<div className=" grid md:grid-cols-2   w-full mt-3E ">
 				{/* left section */}
 				<div className="md:px-24 px-6 flex flex-col lg:mt-[80px] w-full lg:text-left text-center">
-					<p className="font-LaBelle text-[#00BB98] font-normal md:text-[32] text-[14px] ">
+					<p className="font-LaBelle text-[#00BB98] font-normal md:text-[32] text-[20px] ">
 						Natural beauty
 					</p>
 					<p className="font-nunito text-[#111B19]  font-bold  text-[40px] lg:text-[48px] w-full">
