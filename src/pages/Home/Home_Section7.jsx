@@ -45,7 +45,7 @@ const Home_Section7 = () => {
 	};
 
 	return (
-		<div className="w-full py-24 md:px-24 px-6 flex flex-col mt-8">
+		<div className="w-full py-24 md:px-24 px-6 flex flex-col ">
 			<p className=" font-LaBelle text-[#00BB98] font-normal text-[36px] text-center ">
 				Testimonials
 			</p>
