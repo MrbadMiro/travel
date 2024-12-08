@@ -12,7 +12,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Destination from "./pages/Destination/Destination";
 import Tours from "./pages/Tours/Tours";
 import TourDetailsPage from "./pages/Tours/TourDetailsPage";
-
+import DetailsPage from "./pages/Destination/DetailsPage";
 
 
 const router = createBrowserRouter([
@@ -43,6 +43,10 @@ const router = createBrowserRouter([
 			{
 				path: "/travel/explore/:id",
 				element: <TourDetailsPage/>,
+			},
+			{
+				path: "/travel/details/:id",
+				element: <DetailsPage/>,
 			},
 			
 			

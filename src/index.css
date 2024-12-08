@@ -15,12 +15,42 @@ body {
 
 #slider-boxes {
 	display: flex;
+	justify-content: space-between;
+	gap: 10px; 
 }
+
+.custom-slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center slider on large screens */
+    gap: 16px; /* Add spacing between slides */
+}
+
+.custom-slider .slick-list {
+    padding: 0 !important; /* Remove default padding */
+}
+.custom-slider .slick-slide {
+    margin: 0 !important; /* Remove extra margins */
+}
+
+.custom-slider .slick-track {
+    display: flex !important; /* Ensure slides align as flex items */
+    gap: 16px; /* Add consistent spacing between slides */
+}
+
+
+
+/* .custom-slider{
+	display: flex;
+	
+} */
+
 
 
 .slick-slide div {
-	margin: 10px;
+    margin: 10px 0; /* Applies margin only to the top and bottom */
 }
+
 .custom-slider .slick-dots li button:before {
 	color: #1f294c; /* Change to your desired color */
 }
